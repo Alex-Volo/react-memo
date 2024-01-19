@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-memo/static/css/main.297ceaa4.css",
-    "main.js": "/react-memo/static/js/main.8fa8fcb5.js",
+    "main.css": "/react-memo/static/css/main.79fcf6ed.css",
+    "main.js": "/react-memo/static/js/main.c2dc97eb.js",
     "static/media/StratosSkyeng.woff2": "/react-memo/static/media/StratosSkyeng.ce93393e831d32412096.woff2",
     "static/media/celebration.png": "/react-memo/static/media/celebration.2577e3c3835ac1f32429.png",
     "static/media/dead.png": "/react-memo/static/media/dead.bfb3f81b5110f1b62252.png",
@@ -11,11 +11,11 @@
     "static/media/hearts.svg": "/react-memo/static/media/hearts.be33f4a44d6f0430c5e08883a0ad5e5b.svg",
     "static/media/spades.svg": "/react-memo/static/media/spades.93f2e7c8261b046c228b40965b4493ec.svg",
     "static/media/diamonds.svg": "/react-memo/static/media/diamonds.6d6202122f9a41366f7da20cfe4cf5b7.svg",
-    "main.297ceaa4.css.map": "/react-memo/static/css/main.297ceaa4.css.map",
-    "main.8fa8fcb5.js.map": "/react-memo/static/js/main.8fa8fcb5.js.map"
+    "main.79fcf6ed.css.map": "/react-memo/static/css/main.79fcf6ed.css.map",
+    "main.c2dc97eb.js.map": "/react-memo/static/js/main.c2dc97eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.297ceaa4.css",
-    "static/js/main.8fa8fcb5.js"
+    "static/css/main.79fcf6ed.css",
+    "static/js/main.c2dc97eb.js"
   ]
 }
