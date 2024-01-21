@@ -30,7 +30,6 @@ export function LeaderboardPage() {
   useEffect(() => {
     getLeaders()
       .then(leaders => {
-        console.log(leaders);
         const sortedLeaders = sortLeadersByTime(leaders.leaders);
         setLeaders(sortedLeaders);
       })

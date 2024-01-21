@@ -78,6 +78,8 @@
 
 .superPower:hover {
   z-index: 1;
+  transition: all 0.4s;
+
   box-shadow: 0 0 100vh 100vh #00498099;
 }
 
@@ -93,7 +95,7 @@
   padding: 60px 20px 20px;
 
   border-radius: 12px;
-
+  opacity: 1;
   background-color: #c2f5ff;
   color: #004980;
   font-size: 18px;
@@ -133,5 +135,12 @@
 
 .disabled {
   cursor: not-allowed;
-  opacity: 0.6;
+  box-shadow: inset 0 0 0 50px #00498059;
+}
+
+.disabled:hover {
+  transition: all 0.4s;
+  box-shadow:
+    inset 0 0 0 50px #00498059,
+    0 0 100vh 100vh #00498099;
 }
