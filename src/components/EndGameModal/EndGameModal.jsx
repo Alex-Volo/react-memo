@@ -32,10 +32,11 @@ export function EndGameModal({
       <h2 className={styles.title}>{title}</h2>
       {isOnLeaderboard && (
         <form
+          style={{ display: "flex" }}
           onSubmit={e => {
             e.preventDefault();
-            console.log("Форма отправилась");
             sendLeader({ name: inputValue, time: timeInSeconds, achievements });
+            setInputValue("");
           }}
         >
           <input
@@ -45,6 +46,7 @@ export function EndGameModal({
             onChange={e => setInputValue(e.target.value)}
             type="text"
           />
+          {inputValue && <button onClick={() => setInputValue("")} className={styles.submitButton} type="submit" />}
         </form>
       )}
       <p className={styles.description}>Затраченное время:</p>
