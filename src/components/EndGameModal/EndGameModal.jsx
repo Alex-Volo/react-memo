@@ -9,7 +9,14 @@ import { Link } from "react-router-dom";
 import { sendLeader } from "../../services/API";
 import { getTimeInSeconds } from "../../utils/helpers";
 
-export function EndGameModal({ isWon, gameDurationSeconds, gameDurationMinutes, onClick, isOnLeaderboard }) {
+export function EndGameModal({
+  isWon,
+  gameDurationSeconds,
+  gameDurationMinutes,
+  onClick,
+  isOnLeaderboard,
+  wasPowUsed,
+}) {
   const [inputValue, setInputValue] = useState("");
   const title = isOnLeaderboard ? "Вы попали на Лидерборд" : isWon ? "Вы победили!" : "Вы проиграли!";
   const timeInSeconds = getTimeInSeconds({ minutes: gameDurationMinutes, seconds: gameDurationSeconds });
@@ -17,16 +24,19 @@ export function EndGameModal({ isWon, gameDurationSeconds, gameDurationMinutes, 
 
   const imgAlt = isWon ? "celebration emodji" : "dead emodji";
 
+  const achievements = wasPowUsed ? [1] : [1, 2];
+
   return (
     <div className={`${styles.modal} ${isOnLeaderboard && styles.height634}`}>
       <img className={styles.image} src={imgSrc} alt={imgAlt} />
       <h2 className={styles.title}>{title}</h2>
       {isOnLeaderboard && (
         <form
+          style={{ display: "flex" }}
           onSubmit={e => {
             e.preventDefault();
-            console.log("Форма отправилась");
-            sendLeader({ name: inputValue, time: timeInSeconds });
+            sendLeader({ name: inputValue, time: timeInSeconds, achievements });
+            setInputValue("");
           }}
         >
           <input
@@ -36,6 +46,7 @@ export function EndGameModal({ isWon, gameDurationSeconds, gameDurationMinutes, 
             onChange={e => setInputValue(e.target.value)}
             type="text"
           />
+          {inputValue && <button className={styles.submitButton} type="submit" />}
         </form>
       )}
       <p className={styles.description}>Затраченное время:</p>

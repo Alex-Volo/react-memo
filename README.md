@@ -1,5 +1,9 @@
 # MVP Карточная игра "Мемо"
 
+## Coursework
+
+Plan: 6,5 hours, Fact: 6 hours.
+
 ## Homework#2
 
 Plan: 10 hours, Fact: 6 hours
@@ -14,7 +18,7 @@ Plan: 4,5 hours, Fact: 5 hours
 В этом репозитории реализован MVP карточкой игры "Мемо" по [тех.заданию](./docs/mvp-spec.md)
 
 Проект задеплоен на gh pages:
-https://skypro-web-developer.github.io/react-memo/
+https://alex-volo.github.io/react-memo/
 
 ## Разработка
 
