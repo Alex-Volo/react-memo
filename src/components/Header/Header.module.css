@@ -76,9 +76,16 @@
   cursor: pointer;
 }
 
+.superPower:hover {
+  z-index: 1;
+  box-shadow: 0 0 100vh 100vh #00498099;
+}
+
 .superPower:hover::before {
   content: "";
   position: absolute;
+  top: 83px;
+  left: -75px;
   box-sizing: border-box;
   z-index: 1;
   width: 222px;
@@ -86,7 +93,7 @@
   padding: 60px 20px 20px;
 
   border-radius: 12px;
-  top: 83px;
+
   background-color: #c2f5ff;
   color: #004980;
   font-size: 18px;
@@ -102,7 +109,7 @@
   position: absolute;
   z-index: 2;
   top: 103px;
-  left: 68px;
+  left: -11px;
   font-size: 18px;
   font-weight: bold;
   color: #004980;
@@ -118,7 +125,7 @@
   position: absolute;
   z-index: 2;
   top: 103px;
-  left: 68px;
+  left: -11px;
   font-size: 18px;
   font-weight: bold;
   color: #004980;
