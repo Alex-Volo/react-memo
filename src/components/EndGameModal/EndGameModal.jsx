@@ -46,7 +46,7 @@ export function EndGameModal({
             onChange={e => setInputValue(e.target.value)}
             type="text"
           />
-          {inputValue && <button onClick={() => setInputValue("")} className={styles.submitButton} type="submit" />}
+          {inputValue && <button className={styles.submitButton} type="submit" />}
         </form>
       )}
       <p className={styles.description}>Затраченное время:</p>
